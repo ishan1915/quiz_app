@@ -1,0 +1,15 @@
+<!-- quiz_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Quiz</title>
+</head>
+<body>
+    <h2>Create Quiz</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Quiz</button>
+    </form>
+</body>
+</html>

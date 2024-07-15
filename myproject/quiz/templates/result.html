@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Result</title>
+</head>
+<body>
+    <h1>Quiz Result</h1>
+    <p>You selected: {{ selected_option }}</p>
+    <p>Correct answer: {{ correct_option }}</p>
+    {% if is_correct %}
+        <p><strong>Correct!</strong></p>
+    {% else %}
+        <p><strong>Incorrect.</strong> The correct answer is: {{ quiz.correct_option }}</p>
+    {% endif %}
+    <!-- Display quiz details if needed -->
+    <p>Quiz Title: {{ quiz.title }}</p>
+    <p>Question: {{ quiz.question }}</p>
+</body>
+</html>
