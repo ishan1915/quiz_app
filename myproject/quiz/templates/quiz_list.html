@@ -1,20 +1,30 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Quiz List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'quiz/quizlist.css' %}">
+
 </head>
 <body>
     <h1>Quiz List</h1>
     <ul>
+        <div class="qqqq">
         {% for quiz in quizzes %}
-
-        {{quiz.title}}
-        {{quiz.question}}
-        <a href="{% url 'quiz' quiz.id %}">que</a>
-
+       
+        <div class="quizz">
+        <h3>Quiz Category: {{quiz.title}}</h3>
+           
+        <a href="{% url 'quiz' quiz.id %}"> {{quiz.question}}</a>
+        </div>
 
          {% endfor %}
+        </div>
     </ul>
 </body>
 </html>

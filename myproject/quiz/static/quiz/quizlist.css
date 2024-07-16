@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+.qqqq{
+    display: inline-block;
+}
+ 
+.quizz{
+  color: white;  
+  margin: 10px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgb(147, 198, 243);
+  display:block;
+  width: 600px;
+  height: 100px;
+
+}
+h1{
+   color: aliceblue;
+   text-align: center;
+}
